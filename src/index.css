@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Vazirmatn', system-ui, sans-serif;
+}
+
+/* Custom gradient text utility */
+.gradient-text {
+  @apply bg-gradient-to-r from-orange-500 to-white bg-clip-text text-transparent;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.ql-editor {
+  min-height: 200px;
+}
+
+.dark .ql-container {
+  border: 1px solid #444;
+}
+
+.dark .ql-editor {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark .ql-toolbar {
+  background-color: #333;
+  border: 1px solid #444;
+}
+
+.dark .ql-snow .ql-picker-label:hover,
+.dark .ql-snow .ql-picker-item:hover {
+  color: #fff;
+}
+
+.dark .ql-snow .ql-active {
+  color: #fff;
+}

@@ -1,1 +1,1 @@
-# test
+# gamelandmc-rules-final
